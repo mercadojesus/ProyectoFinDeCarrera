@@ -1,0 +1,51 @@
+/* --> FUENTE <-- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --clr-text: #302f2f;
+    --clr-red: #f60404;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+body {
+    padding: 50px;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 40px;
+    border: 5px solid var(--clr-red);
+}
+
+/* --> ENCABEZADO PRINCIPAL <-- */
+.contenedor header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* border: 1px solid blueviolet; */
+    width: 250px;
+    /* margin-right: 50px; */
+}
+
+#nav a {
+    /* border: 1px solid blueviolet; */
+    text-decoration: none;
+    color: var(--clr-text);
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#nav a:hover {
+    color: var(--clr-red);
+}
