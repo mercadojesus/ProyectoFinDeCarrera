@@ -127,6 +127,7 @@ body {
 
 .bandera {
     width: 200px;
+    margin: 0 30px;
 }
 
 .buscador {
@@ -135,6 +136,8 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+
+    width: 80%;
 }
 
 .col-derecha {
