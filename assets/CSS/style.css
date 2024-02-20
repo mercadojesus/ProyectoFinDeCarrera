@@ -21,9 +21,8 @@ body {
 
 .contenedor {
     max-width: 1200px;
-    height: 850px;
     margin: auto;
-    padding: 40px;
+    padding: 20px;
     border-radius: 40px;
     border: 5px solid var(--clr-red);
 }
