@@ -4,6 +4,8 @@
 :root {
     --clr-text: #302f2f;
     --clr-red: #f60404;
+    --clr-white: #fff;
+    --clr-red-grad: linear-gradient(to right,var(--clr-white), var(--clr-red));
 }
 
 * {
@@ -19,6 +21,7 @@ body {
 
 .contenedor {
     max-width: 1200px;
+    height: 850px;
     margin: auto;
     padding: 40px;
     border-radius: 40px;
@@ -73,4 +76,76 @@ body {
 
 #nav a:hover {
     color: var(--clr-red);
+}
+
+.icono-carrito {
+    /* border: 1px solid blueviolet; */
+    color: var(--clr-text);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    transition: all .3s;
+}
+
+.icono-carrito:hover {
+    /* background-color: var(--clr-red); */
+    color: var(--clr-red);
+}
+
+.total-item-carrito {
+    /* border: 1px solid blueviolet; */
+    color: var(--clr-text);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--clr-white);
+    top: 0;
+    right: 0;
+   
+    line-height: 5px;
+}
+
+/* ---> ESTILOS SECCIÓN INICIO / HERO <--- */
+.contenedor-seccion {
+    /* border: 1px solid yellowgreen; */
+    position: relative;
+    overflow: hidden;
+}
+
+.col {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandera {
+    width: 200px;
+}
+
+.buscador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.col-derecha {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    border-radius: 40px;
 }
