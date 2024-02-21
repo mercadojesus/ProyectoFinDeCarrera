@@ -16,7 +16,8 @@
 }
 
 body {
-    padding: 50px;
+    /* padding: 50px; */
+    padding-top: 50px;
 }
 
 .contenedor {
@@ -131,7 +132,7 @@ body {
 }
 
 /* ---> MARCAS <--- */
-.marcas {
+.marcas, .marcas2 {
     display: flex;
     /* flex-direction: column; */
     align-items: center;
@@ -194,4 +195,70 @@ body {
 .hero-img {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+}
+
+/* ---> PIE DE PÁGINA <--- */
+.pie-pagina {
+    width: 100%;
+    background: rgb(24,24,24);
+    background: linear-gradient(0deg, rgba(24,24,24,1) 0%, rgba(251,251,251,1) 100%);
+}
+
+.pie-pagina .grupo-1 {
+    /* border: 1px solid red; */
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box {
+    /* border: 1px solid red; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.pie-pagina .grupo-1 figure img {
+    /* border: 3px solid yellow; */
+    width: 400px;
+}
+
+.pie-pagina .grupo-1 .box2 {
+    /* border: 1px solid red; */
+    margin-left: 100px;
+}
+
+.pie-pagina .grupo-1 .box2 a {
+    text-decoration: none;
+    color: var(--clr-text);
+    font-weight: bold;
+    list-style: none;
+    /* border: 1px solid yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-left: 50px; */
+}
+
+.pie-pagina .grupo-1 .box .red {
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+hr {
+    border: .5px solid var(--clr-grey-1);
+}
+
+.grupo-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-white);
+    padding: 10px 0;
 }
