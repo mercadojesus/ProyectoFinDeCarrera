@@ -215,13 +215,6 @@ body {
     padding: 45px 0px;
 }
 
-.pie-pagina .grupo-1 .box {
-    /* border: 1px solid red; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
 .pie-pagina .grupo-1 figure img {
     /* border: 3px solid yellow; */
     width: 400px;
@@ -232,23 +225,31 @@ body {
     margin-left: 100px;
 }
 
-.pie-pagina .grupo-1 .box2 a {
+.box2 a {
+    /* border: 1px solid yellowgreen; */
+    padding: 0;
     text-decoration: none;
     color: var(--clr-text);
     font-weight: bold;
     list-style: none;
-    /* border: 1px solid yellowgreen; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* margin-left: 50px; */
+    transition: all .3s;
 }
+
+/* .pie-pagina .grupo-1 .box2 a:hover {
+    letter-spacing: 1px;
+} */
 
 .pie-pagina .grupo-1 .box .red {
     width: 50px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 0px;
+    margin-top: 10px;
+}
+
+.pie-pagina .grupo-1 .box .insta {
+    margin-left: 10px;
 }
 
 hr {
