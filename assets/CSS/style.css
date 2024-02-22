@@ -118,12 +118,18 @@ body {
     overflow: hidden;
 }
 
-.col {
+.col { /* ---> Contendor LOGO de la firma */
     /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
+}
+
+.col .logo-taller {
+    /* border: 1px solid blueviolet; */
+    width: 500px;
 }
 
 .bandera {
@@ -195,6 +201,16 @@ body {
 .hero-img {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+}
+
+/* ---> SECCIÓN ENCABEZADO <--- */
+.header-seccion {
+    position: relative;
+}
+
+/* ---> PRODUCTOS <--- */
+.productos {
+    position: relative;
 }
 
 /* ---> PIE DE PÁGINA <--- */
