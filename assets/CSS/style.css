@@ -6,6 +6,7 @@
     --clr-red: #f60404;
     --clr-white: #fff;
     --clr-grey-1: #6b6a6a;
+    --clr-grey-2: #cccccc;
 }
 
 * {
@@ -78,23 +79,30 @@ body {
     color: var(--clr-red);
 }
 
-.icono-carrito {
+.redes .icono-redes a {
+    text-decoration: none;
+}
+
+.fa-brands {
     /* border: 1px solid blueviolet; */
     color: var(--clr-text);
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 16px;
+    width: fit-content;
+    margin-right: 10px;
+    padding: 3px;
+    /* height: 20px; */
+    /* border-radius: 50%; */
+    font-size: 36px;
     text-align: center;
-    line-height: 40px;
+    /* line-height: 50px; */
     position: relative;
     transition: all .3s;
 }
 
-.icono-carrito:hover {
+.fa-brands:hover {
     /* background-color: var(--clr-red); */
     color: var(--clr-red);
+    transform: scale(1.3);
 }
 
 .total-item-carrito {
@@ -203,7 +211,7 @@ body {
     border-bottom-right-radius: 40px;
 }
 
-/* ----------------------------> SHOP <---------------------------- */
+/* ----------------------------> INSUMOS <---------------------------- */
 /* ---> SECCIÓN ENCABEZADO <--- */ 
 .header-seccion {
     /* border: 1px solid yellowgreen; */
@@ -217,6 +225,24 @@ body {
 
 .header-seccion .col {
     width: 30%;
+}
+
+.header-seccion .col .link-blanco {
+    /* border: 1px solid ; */
+    padding: 3px;
+    text-decoration: none;
+    color: var(--clr-text);
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.header-seccion .col .link-blanco:hover {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: var(--clr-red);
+    color: var(--clr-white);
+    
 }
 
 .header-seccion .busqueda {
@@ -240,6 +266,12 @@ body {
     border-radius: 5px;
 }
 
+.contenedor-seccion .descripcion {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: 10px 0;
+}
+
 /* ---> PRODUCTOS <--- */
 .productos {
     /* border: 1px solid royalblue; */
@@ -247,14 +279,15 @@ body {
 }
 
 .productos .fila {
+    /* border: 1px solid blueviolet; */
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .productos .fila .col { /* -----> CONTENEDOR card de producto  */
     border: 1px solid var(--clr-red);
-    width: auto;
+    width: 300px;
     max-height: 350px;
     padding: 20px;
     border-radius: 30px;
@@ -262,34 +295,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
-.productos .fila .col header {
-    /* border: 1px solid green; */
+/* .productos .fila .col .contenido {
+    border: 1px solid var(--clr-red);
     border-radius: 9px;
-    /* justify-content: space-evenly; */
-}
-
-.like, .cart { /* ----->ÍCONOS de los cards */
-    color: var(--clr-text);
-    margin-inline: 60px;
-    /* border: 1px solid red; */
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    line-height: 30px;
-    font-size: 14px;
-    transition: .3s;
-}
-
-.like:hover, .cart:hover {
-    background-color: var(--clr-red);
-    color: var(--clr-white);
-    transform: scale(1.4) rotate(-45deg);
-    /* transform: rotate(-45deg); */
-}
+} */
 
 .productos .fila .col img { /* -----> IMAGENES de los cards */
     /* border: 1px solid brown; */
@@ -301,7 +313,8 @@ body {
     transition: .3s;
 }
 
-.productos .fila .col img:hover {
+.productos .fila .col:hover img {
+    /* border: 1px solid yellowgreen; */
     transform: scale(1.1);
 }
 
@@ -333,9 +346,130 @@ body {
     left: 13px;
 }
 
+.productos .fila .col .intro {
+    /* border: 1px solid purple; */
+    width: 100%;
+    /* padding: 0 80px; */
+    /* border-radius: 5px; */
+    position: absolute;
+    bottom: 280px;
+    /* color: transparent; */
+    transition: .3s;
+}
+
+.productos .fila .col .intro h2 {
+    color: white;
+    transition: .3s;
+}
+
+.col:hover .ver {
+    /* border: 1px solid yellowgreen; */
+    background-color: var(--clr-red);
+    cursor: pointer;
+    /* color: white; */
+}
+
+/* ----------------------------> SECCIÓN DETALLE INSUMOS <---------------------------- */
+.header-seccion .flecha {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--clr-text);
+    padding: 0 10px;
+    transition: .3s;
+}
+
+.header-seccion .flecha:hover {
+    transform: scale(1.3);
+    color: var(--clr-red);
+}
+
+.detalle-producto {
+    position: relative;
+    padding: 0 50px;
+}
+
+.detalle-producto .fila {
+    padding: 50px 40px;
+    border: 1px solid var(--clr-red);
+    border-radius: 40px;
+    display: flex;
+}
+
+.detalle-producto .fila .izquierda,
+.detalle-producto .fila .centro { /* ---> Distribución de las filas */
+    /* border: 1px solid orangered; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detalle-producto .fila .col .img-producto img {
+    /* border: 1px solid seagreen; */
+    width: 100%;
+}
+
+.detalle-producto .fila .izquierda h3 { /* ---> Título de la descripción */
+    color: var(--clr-text);
+    margin-bottom: 20px;
+}
+
+/* ---> TABLA <--- */
+.contenedor-tabla {
+    /* border: 1px solid var(--clr-grey-1); */
+    margin-bottom: 10px;
+}
+
+.contenedor-tabla .dato {
+    /* border: 1px solid; */
+    color: var(--clr-red);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px 0;
+}
+
+.detalle-producto .fila .izquierda p { /* ---> Texto de la descripción */
+    font-size: 15px;
+    color: var(--clr-text);
+    margin-bottom: 20px;
+}
+
+.detalle-producto .fila .izquierda .miniaturas {
+    /* border: 1px solid var(--clr-grey-1); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    /* overflow: hidden; */
+}
+
+.detalle-producto .fila .izquierda img {
+    /* border: 1px solid var(--clr-red); */
+    display: inline-block;
+    width: 80px;
+    cursor: pointer;
+    margin: 0 1px;
+    /* margin-left: 78px; */
+    transition: .4s;
+}
+
+.detalle-producto .fila .izquierda .mini-selected:hover {
+    /* border: 1px solid var(--clr-red); */
+    /* width: 90px; */
+    /* padding: 10px; */
+    transform: scale(1.1);
+}
+
+.detalle-producto .fila .centro .img-producto {
+    margin: auto;
+    width: 300px;
+    /* border: 1px solid var(--clr-grey-1); */
+    /* border-radius: 50%; */
+}
+
 /* ----------------------------> SECCIÓN NOSOTROS <---------------------------- */
 .blog .titulo {
-    border: 1px solid red;
+    border: 1px solid var(--clr-red);
     text-align: center;
     margin: 10px 0;
 }
@@ -373,22 +507,307 @@ body {
 
 .contacto .fila .derecha .logo-contacto {
     /* border: 1px solid yellowgreen; */
-    top: 10px;
+    top: 1px;
+    /* width: 250px; */
+    /* top: 1px; */
+    /* bottom: 100px; */
 }
 
 .contacto .fila .derecha h2 {
-    font-size: 50px;
+    /* border: 1px solid red; */
+    font-size: 50px; 
     text-align: center;
+    margin-top: 110px;
 }
 
 .contacto .fila .derecha img {
     /* border: 1px solid blueviolet; */
     /* margin-top: 50px;
     bottom: 150px; */
-    top: 300px;
-    width: 300px;
+    top: 360px;
+    width: 200px;
     position: absolute;
 }
+
+.contacto .fila .col .btn-contacto {
+    font-size: 30px;
+    width: auto;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contacto .fila .col .btn-contacto:hover {
+    background-color: var(--clr-red);
+    color: var(--clr-white);
+}
+
+/* ----------------------------> SECCIÓN GALERIA / TRABAJOS <---------------------------- */
+.trabajos { /* ---> CONTENEDOR GENERAL DE LA SECCIÓN */
+    /* border: 1px solid royalblue; */
+    margin-top: 20px;
+    position: relative;
+}
+
+.trabajos .fila {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+
+.trabajos .fila .col { /* -----> CONTENEDOR card de producto  */
+    /* border: 1px solid var(--clr-red); */
+    /* width: fit-content; */
+    /* max-height: 350px; */
+    /* padding: 10px; */
+    width: fit-content;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.trabajos .fila .col img { /* -----> IMAGENES de los cards */
+    /* border: 1px solid brown; */
+    border: none;
+    width: auto;    
+    height: 320px;
+    display: block;
+    /* margin: 20px auto; */
+    position: relative;
+    transition: .3s;
+    border-radius: 30px;
+}
+
+.trabajos .fila .col .intro {
+    /* border: 1px solid yellowgreen; */
+    width: 100%;
+    /* padding: 0 20px; */
+    position: absolute;
+    bottom: 301px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* .trabajos .fila .col .intro:hover {
+    background-color: var(--clr-red);
+} */
+
+.trabajos .fila .col .intro a {
+    text-decoration: none;
+}
+
+.trabajos .fila .col .intro .ver {
+    /* border: 1px solid yellowgreen; */
+    color: black;
+    transition: .4s;
+    font-size: 14px;
+}
+
+.trabajos .fila .col:hover  {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 8px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 8px -3px rgba(0,0,0,0.75);
+    
+}
+
+/* ----------------------------> SECCIÓN DETALLE GALERÍA / TRABAJOS <---------------------------- */
+
+.detalle-trabajo {
+    position: relative;
+    padding: 0 50px;
+}
+
+.detalle-trabajo .fila {
+    padding: 50px 40px;
+    border: 1px solid var(--clr-red);
+    border-radius: 40px;
+    display: flex;
+}
+
+.detalle-trabajo .fila .izquierda,
+.detalle-trabajo .fila .centro { /* ---> Distribución de las filas */
+    /* border: 1px solid orangered; */
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.detalle-trabajo .fila .izquierda .img-trabajo img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.detalle-trabajo .fila .col h3 { /* ---> Título de la descripción */
+    padding: 2px 20px;
+    color: var(--clr-white);
+    border-radius: 10px;
+    background-color: var(--clr-red);
+}
+
+/* ---> TABLA <--- */
+.contenedor-tabla {
+    margin: 10px 0;
+}
+
+.detalle-trabajo .fila .izquierda p { /* ---> Texto de la descripción */
+    font-size: 15px;
+    color: var(--clr-text);
+    margin-bottom: 20px;
+}
+
+/* ---> MINIATURAS TRABAJOS <--- */
+.detalle-trabajo .fila .centro .miniaturas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    height: 190px;
+    /* overflow: hidden; */
+}
+
+.detalle-trabajo .fila .centro .mini-selected {
+    display: inline-block;
+    width: 160px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.detalle-trabajo .fila .centro .mini-selected:hover {
+    transform: scale(1.1);
+}
+
+/* ----------------------------> SECCIÓN SERVICIOS <---------------------------- */
+.servicios { /* ---> CONTENEDOR GENERAL DE LA SECCIÓN */
+    /* border: 1px solid royalblue; */
+    margin-top: 20px;
+    position: relative;
+}
+
+.servicios .fila {
+    /* border: 1px solid royalblue; */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+
+.servicios .fila .col { /* -----> CONTENEDOR card de producto  */
+    /* border: 1px solid var(--clr-red); */
+    /* width: fit-content; */
+    /* max-height: 350px; */
+    /* padding: 10px; */
+    /* width: fit-content; */
+    /* width: 350px; */
+    width: fit-content;
+    height: 300px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: .3s;
+    margin-top: 10px;
+    border: none;
+}
+
+.servicios .fila .col img { /* -----> IMAGENES de los cards */
+    /* border: 1px solid blueviolet; */
+    /* border: none; */
+    width: auto;    
+    height: 250px;
+    display: block;
+    /* margin: 20px auto; */
+    position: relative;
+    transition: .3s;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 45px;
+}
+
+.servicios .fila .col .intro2 { /* -----> CONTENEDOR de los TEXTOS de los cards */
+    /* border: 1px solid yellowgreen; */
+    width: 250px;
+    height: 30px;
+    /* padding: 0 20px; */
+    box-sizing: border-box;
+    position: absolute;
+    /* bottom: 301px; */
+    padding: 6px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(58, 58, 58, 0.61);
+    backdrop-filter: blur(6px);
+    color: var(--clr-white);
+    /* border-top-left-radius: 30px;
+    border-top-right-radius: 30px; */
+    bottom: 0;
+    /* overflow: hidden; */
+    transition: .3s;
+}   
+
+.servicios .fila .col .intro2 h2 {
+    font-size: 15px;
+}
+
+.servicios .fila .col .intro2 .texto {
+    margin-top: 50px;
+}
+
+.servicios .fila .col .intro2 .continuar {
+    border: 1px solid var(--clr-red);
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.servicios .fila .col .intro2 .continuar a {
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+/* .trabajos .fila .col .intro:hover {
+    background-color: var(--clr-red);
+} */
+
+.servicios .fila .col .intro a {
+    text-decoration: none;
+}
+
+.servicios .fila .col .intro .ver {
+    /* border: 1px solid yellowgreen; */
+    color: black;
+    transition: .4s;
+    font-size: 14px;
+}
+
+.servicios .fila .col:hover  {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 8px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 8px -3px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.servicios .fila .col:hover .intro2 {
+    
+    height: 300px;
+    border-radius: 30px;
+}
+
 
 /* ----------------------------> PIE DE PÁGINA <---------------------------- */
 .pie-pagina {
@@ -421,6 +840,7 @@ body {
 .box2 a {
     /* border: 1px solid yellowgreen; */
     /* padding: 0; */
+    width: fit-content;
     text-decoration: none;
     color: var(--clr-text);
     font-weight: bold;
@@ -428,7 +848,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-left: 50px; */
     transition: .3s;
 }
 
@@ -440,6 +859,11 @@ body {
 .pie-pagina .grupo-1 .box .red {
     width: 50px;
     margin-top: 10px;
+    transition: .3s;
+}
+
+.pie-pagina .grupo-1 .box .red:hover {
+    transform: scale(1.1);
 }
 
 .pie-pagina .grupo-1 .box .insta {
