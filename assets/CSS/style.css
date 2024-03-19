@@ -201,6 +201,7 @@ header .logo-titulo, .redes {
 }
 
 .logos-slide img {
+    border: 1px solid yellowgreen;
     width: 150px;
     margin: 0 20px;
     transition: .3s;
@@ -503,37 +504,56 @@ header .logo-titulo, .redes {
 
 /* ----------------------------> SECCIÓN NOSOTROS <---------------------------- */
 .nosotros {
-    border: 1px solid blue;
     position: relative;
 }
 
 .nosotros .fila {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nosotros .fila .col {
-    border: 1px solid yellowgreen;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros .fila .col p {
+    width: 100%;
 }
 
 .nosotros .fila .izquierda, .derecha {
-    border: 1px solid red;
     margin: 10px;
     display: block;
 }
 
 .nosotros .fila .derecha {
-    border: 1px solid blueviolet;
     margin: 10px;
 }
 
-/* .nosotros .titulo {
+.nosotros .nos {
+    width: 90%;
+    border-radius: 30px;
+    
+}
+
+.nosotros .titulo {
     border: 1px solid var(--clr-red);
     text-align: center;
-    margin: 10px 0;
-} */
+    margin-bottom: 10px;
+}
 
+.nosotros-texto {
+    margin: 0 20px 10px 20px;
+}
+
+.estilo::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+    font-family:serif;
+}
 
 /* ----------------------------> SECCIÓN CONTACTO <---------------------------- */
 .contacto {
@@ -1109,6 +1129,21 @@ hr {
 
     .marcas, .marcas2 {
         display: none;
+    }
+
+    /* ---> SECCIÓN NOSOTROS <--- */
+    .nosotros .fila {
+        display: block;
+    }
+
+    .nosotros .fila .col p {
+        width: 100%;
+    }
+
+    .nosotros .fila .col {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
     /* ---> SECCIÓN SERVICIOS <--- */
