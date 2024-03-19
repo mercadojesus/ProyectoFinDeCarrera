@@ -34,25 +34,30 @@
                 <a href="insumos.html">Insumos</a>
                 <a href="galeria.html">Galeria</a>
                 <a href="contacto.html" class="selected">Contacto</a>
+                <!-- ÍCONO CERRAR MENÚ RESPONSIVE -->
+                <span id="close-responsive">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
             </nav>
+            <!-- ÍCONO MENÚ RESPONSIVE -->
+            <div id="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
 
             <!-- REDES -->
             <div class="redes">
-                
-                <a href="carrito.html">
-                    <div class="icono-redes">
-                        <a href="contacto.html">
-                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.facebook.com/PuestaPunt" target="_blank">
-                            <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.instagram.com/puestapunto_racingteam" target="_blank">
-                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                        </a>
-                        
-                    </div>
-                </a>
+                <div class="icono-redes">
+                    <a href="contacto.html">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/PuestaPunt" target="_blank">
+                        <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/puestapunto_racingteam" target="_blank">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </header>
 
@@ -82,19 +87,28 @@
             <section class="contacto">
                 <div class="fila">
                     <div class="col">
-                        <form action="">
-                            <input type="text" placeholder="Nombre">
-                            <input type="text" placeholder="Correo">
-                            <input type="text" placeholder="Teléfono">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                            <button class="btn-contacto">Enviar</button>
+                        <form action="https://formsubmit.co/mercado_jesus@outlook.es" method="post">
+                            <input class="formularioInput" type="text" name="nombre" required>
+                            <label for="" class="formularioLabel">Nombre</label>
+                            <input class="formularioInput" type="email" name="email" required>
+                            <label for="" class="formularioLabel">Mail</label>
+                            <input class="formularioInput" type="tel" name="teléfono" required>
+                            <label for="" class="formularioLabel">Teléfono</label>
+
+                            <textarea class="formularioInput" name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    
+                            <input type="submit" class="btn-contacto">
                         </form>
                     </div>
                     <div class="col derecha">
-                        <!-- <img class="logo-contacto" src="assets/imgs/Logo.png" alt=""> -->
-                        <img class="logo-contacto" src="assets/imgs/service.png" alt="">
-                        <h2>CONTACTANOS <br> AHORA</h2>
-                        <img src="assets/imgs/contacto.png" alt="">
+                        <img class="logo-contacto" src="assets/imgs/Logo-4.png" alt="">
+                        <div class="info-contacto">
+                            <h4>Te invitamos a conocer nuestro taller y trabajos</h4>
+                            <p>Maipú 598 - Villa de Soto - Córdoba</p>
+                            <h4>Solicitá tu turno al</h4>
+                            <p>3548403773 o 3549463134</p>
+                        </div>
+                        <img class="logo-contacto2" src="assets/imgs/icon-original.png" alt="">
                     </div>
                 </div>
             </section>
@@ -125,8 +139,9 @@
             <div class="box">
                 <h2>Seguinos</h2>
                 <div class="red-social">
-                    <a href="https://www.facebook.com/PuestaPunt" target="_blank"><img class="red face" src="assets/imgs/facebook-red.png" alt=""></a>
-                    <a href="https://www.instagram.com/puestapunto_racingteam" target="_blank"><img class="red insta" src="assets/imgs/instagram-red.png" alt=""></a>
+                    <a href="contacto.html"><img class="red" src="assets/imgs/whatsapp-red.png" alt=""></a>
+                    <a href="https://www.facebook.com/PuestaPunt" target="_blank"><img class="red" src="assets/imgs/facebook-red.png" alt=""></a>
+                    <a href="https://www.instagram.com/puestapunto_racingteam" target="_blank"><img class="red" src="assets/imgs/instagram-red.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -135,5 +150,7 @@
             <small>&copy; 2024 <b>Jesús Mercado</b> - Todos los Derechos Reservados</small>
         </div>
     </footer>
+
+    <script src="scriptForm.js"></script>
 </body>
 </html>
