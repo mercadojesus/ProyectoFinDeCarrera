@@ -38,9 +38,6 @@ body {
 }
 
 .logo {
-    /* border: 1px solid blueviolet; */
-    /* width: 250px; */
-    /* margin-right: 50px; */
     width: 100%;
 }
 
@@ -58,11 +55,9 @@ header .logo-titulo, .redes {
     padding: 0;
     transition: all .3s;
     position: relative;
-
 }
 
 #nav a:after {
-
     content: "";
     position: absolute;
     height: 4px;
@@ -136,7 +131,7 @@ header .logo-titulo, .redes {
 .col { /* ---> Contendor LOGO de la firma */
     /* border: 1px solid red; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
@@ -148,14 +143,11 @@ header .logo-titulo, .redes {
     /* width: 35%; */
 }
 
-.bandera {
-    width: 200px;
-    margin: 0 30px;
-}
-
 .direccion {
+    width: 100%;
     color: var(--clr-text);
-    margin: 10px 0 15px 0;
+    margin: 20px 0;
+    text-align: center;
 }
 
 /* ----------------------------> SLIDER MARCAS <---------------------------- */
@@ -201,7 +193,6 @@ header .logo-titulo, .redes {
 }
 
 .logos-slide img {
-    border: 1px solid yellowgreen;
     width: 150px;
     margin: 0 20px;
     transition: .3s;
@@ -1046,13 +1037,6 @@ hr {
         padding: 20px;
     }
 
-    /* ---> SECCIÓN MENÚ DE NAVEGACIÓN <--- */
-    /* .logo-titulo {
-        display: none;
-    }
-    .redes {
-        display: none;
-    } */
     nav {
         display: none;
     }
@@ -1072,7 +1056,9 @@ hr {
         z-index: 100;
     }
 
-
+    #nav a:after {
+        display: none;
+    }
 
     /* Asignaremos esta clase dinámicamente con JS */
     nav.menu-responsive a {
@@ -1082,6 +1068,7 @@ hr {
         font-size: 45px;
         margin: 15px 0;
     }
+
     #close-responsive {
         display: block;
         line-height: 40px;
@@ -1094,6 +1081,7 @@ hr {
         width: 40px;
         height: 40px;
         border: 2px solid var(--clr-white);
+        border-radius: 10px;
         line-height: 38px;
     }
 
@@ -1235,10 +1223,16 @@ hr {
 
 @media screen and (max-width:650px) {
     .icono-redes {
-        margin-left: 20px;
+        margin-left: 40px;
     }
 
     .redes .icono-redes .fa-brands {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .icono-redes, .logo {
+        display: none;
     }
 }
