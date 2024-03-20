@@ -1019,6 +1019,10 @@ hr {
     padding: 10px 0;
 }
 
+.grupo-2 p {
+    text-align: center;
+}
+
 #nav-responsive {
     font-size: 18px;
     display: none;
@@ -1034,13 +1038,16 @@ hr {
         padding: 20px;
     }
     .contenedor {
-        padding: 20px;
+        padding: 5px;
+        margin: 0 -10px;
+        width: auto;
     }
 
     nav {
         display: none;
     }
     #nav-responsive {
+        margin-top: 6px;
         display: block;
     }
     nav.menu-responsive {
@@ -1085,11 +1092,17 @@ hr {
         line-height: 38px;
     }
 
+    .pie-pagina {
+        padding: 5px;
+        margin: 0 -20px;
+        width: auto;
+    }
+
     .pie-pagina .grupo-1 {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
+        grid-gap: 5px;
+        padding: 1px 0px;
         margin: 0 auto;
     }
 
@@ -1107,6 +1120,10 @@ hr {
     }
 
     /* ---> SECCIÓN INICIO <--- */
+    .contenedor-seccion {
+        border: 1px solid yellowgreen;
+    }
+
     .contenedor-seccion .inicio .col {
         width: auto;
     }
@@ -1119,7 +1136,20 @@ hr {
         display: none;
     }
 
+    .col-derecha {
+        padding: 0;
+        margin: 0;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        overflow: hidden;
+    }
+
     /* ---> SECCIÓN NOSOTROS <--- */
+    .nosotros { /* ---> contenedor sección */
+        /* margin: -10px; */
+        width: auto;
+    }
+
     .nosotros .fila {
         display: block;
     }
@@ -1234,5 +1264,14 @@ hr {
 @media screen and (max-width:550px) {
     .icono-redes, .logo {
         display: none;
+    }
+
+    .logos:before,
+    .logos:after {
+        display: none;
+    }
+
+    .hero-img {
+        margin-left: 75px;
     }
 }
