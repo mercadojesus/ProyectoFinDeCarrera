@@ -19,12 +19,14 @@
 body {
     /* padding: 50px; */
     padding-top: 50px;
+    padding-bottom: 0;
 }
 
 .contenedor {
     max-width: 1500px;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 0;
     border-radius: 40px;
     border: 5px solid var(--clr-red);
 }
@@ -121,15 +123,13 @@ header .logo-titulo, .redes {
     line-height: 5px;
 }
 
-/* ---> ESTILOS SECCIÓN INICIO / HERO <--- */
-.contenedor-seccion {
-    /* border: 1px solid yellowgreen; */
+/* ---> ESTILOS SECCIÓN INICIO / HERO - INDEX.HTML <--- */
+.contenedor-seccion { /* ---> ENCABEZADO DE LA SECCIÓN */
     position: relative;
     overflow: hidden;
 }
 
 .col { /* ---> Contendor LOGO de la firma */
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,7 +262,7 @@ header .logo-titulo, .redes {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 50px;
+    padding: 40px 40px 30px 50px;
 }
 
 .header-seccion .col {
@@ -395,8 +395,14 @@ header .logo-titulo, .redes {
     /* color: white; */
 }
 
-/* ----------------------------> SECCIÓN DETALLE INSUMOS <---------------------------- */
-.header-seccion .flecha {
+/* ----------------------------> SECCIÓN DETALLE INSUMOS / PRODUCTOS <---------------------------- */
+.header-seccion .busqueda {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.header-seccion .busqueda .flecha {
     font-size: 15px;
     text-decoration: none;
     color: var(--clr-text);
@@ -404,7 +410,7 @@ header .logo-titulo, .redes {
     transition: .3s;
 }
 
-.header-seccion .flecha:hover {
+.header-seccion .busqueda .flecha:hover {
     transform: scale(1.3);
     color: var(--clr-red);
 }
@@ -736,7 +742,6 @@ header .logo-titulo, .redes {
 }
 
 /* ----------------------------> SECCIÓN DETALLE GALERÍA / TRABAJOS <---------------------------- */
-
 .detalle-trabajo {
     width: 100%;
     position: relative;
@@ -1092,6 +1097,7 @@ hr {
         line-height: 38px;
     }
 
+    /* ---> SECCIÓN FOOTER <--- */
     .pie-pagina {
         padding: 5px;
         margin: 0 -20px;
@@ -1119,21 +1125,13 @@ hr {
        margin: 0 auto;
     }
 
-    /* ---> SECCIÓN INICIO <--- */
-    .contenedor-seccion {
-        border: 1px solid yellowgreen;
-    }
-
+    /* ---> SECCIÓN INDEX.HTML <--- */
     .contenedor-seccion .inicio .col {
         width: auto;
     }
 
     .contenedor-seccion .inicio .col .logo-taller {
         width: 59%;
-    }
-
-    .marcas, .marcas2 {
-        display: none;
     }
 
     .col-derecha {
@@ -1144,9 +1142,25 @@ hr {
         overflow: hidden;
     }
 
+    /* ---> ENCABEZADO SECCIONES <--- */
+    .contenedor-seccion {
+        /* border: 1px solid yellowgreen; */
+    }
+
+    .contenedor-seccion .header-seccion {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 10px 5px 10px;
+    }
+
+    .contenedor-seccion .header-seccion .col {
+        /* border: 1px solid orchid; */
+        margin: 0 0 9px 0;
+    }
+
     /* ---> SECCIÓN NOSOTROS <--- */
     .nosotros { /* ---> contenedor sección */
-        /* margin: -10px; */
         width: auto;
     }
 
@@ -1170,17 +1184,27 @@ hr {
     }
 
     .servicios .fila .col {
-        width: 50%;
+        width: 87%;
         margin: auto;
         margin-bottom: 30px;
     }
 
-    .servicios .fila-texto img {
-        display: none;
+    .intro2 {
+        width: 100%;
     }
 
     .servicios .fila .col:hover {
         box-shadow: none;
+    }
+
+    .fila-texto img {
+        display: none;
+    }
+
+    .fila-texto p {
+        display: block;
+        margin-left: -40px;
+        margin-right: 10px;
     }
 
     /* ---> SECCIÓN INSUMOS <--- */
@@ -1196,6 +1220,16 @@ hr {
 
     .productos .fila .col .fondo {
         display: none;
+    }
+
+    /* ---> SECCIÓN DETALLE / INSUMOS <--- */
+    .detalle-producto .fila {
+        padding: 10px 0 0 0;
+        margin: 0px -47px;
+    }
+
+    .detalle-producto .fila .col .izquierda {
+        width: 100%;
     }
 
     /* ---> SECCIÓN GALERÍA <--- */
