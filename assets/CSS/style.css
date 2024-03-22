@@ -1040,7 +1040,8 @@ hr {
 /* ----------------------------> SECCIÓN RESPONSIVE <---------------------------- */
 @media screen and (max-width:950px) {
     body {
-        padding: 20px;
+        border: 1px solid yellowgreen;
+        padding: 5px 17px 0 17px;
     }
     .contenedor {
         padding: 5px;
