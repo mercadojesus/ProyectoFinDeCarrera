@@ -1040,7 +1040,6 @@ hr {
 /* ----------------------------> SECCIÓN RESPONSIVE <---------------------------- */
 @media screen and (max-width:950px) {
     body {
-        border: 1px solid yellowgreen;
         padding: 5px 17px 0 17px;
     }
     .contenedor {
@@ -1236,12 +1235,30 @@ hr {
     /* ---> SECCIÓN GALERÍA <--- */
     .trabajos .fila {
         display: block;
+        
     }
 
     .trabajos .fila .col {
         width: 90%;
         margin: auto;
         margin-bottom: 20px;
+    }
+
+    /* ---> SECCIÓN DETALLE / GALERÍA <--- */
+    .detalle-trabajo .fila {
+        display: block;
+        padding: 10px 0 0 0;
+        margin: 0px -47px;
+    }
+
+    .detalle-trabajo .fila .col {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .detalle-trabajo .fila .col .miniaturas {
+        display: none;
     }
 
     /* ---> SECCIÓN CABECERA DEL INICIO <--- */
@@ -1251,6 +1268,10 @@ hr {
     }
 
     /* ---> SECCIÓN CONTACTO <--- */
+    .contacto {
+        padding: 0;
+    }
+
     .contacto .fila .derecha {
         display: none;
     }
