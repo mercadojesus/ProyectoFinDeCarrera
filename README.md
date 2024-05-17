@@ -21,19 +21,19 @@ El sitio debe estar vinculado a las redes sociales que se manejan en la empresa 
 #### Servicios Ofrecidos por la Empresa:
 Estas prestaciones se encuentran dentro del ámbito mecánico y están dirigidos fundamentalmente al motociclismo, la oferta con la que cuentan es muy amplia pero podemos considerar dentro de lo más importante:
 
-•	Mecánica integral de motocicletas y cuatriciclos.
-•	Mantenimiento preventivo.
-•	Mantenimiento correctivo.
-•	Atención en pista.
-•	Traslado puerta a puerta de unidades.
-•	Tecnología altamente actualizada en cuanto a herramientas e insumos de análisis de software.
-•	Venta de insumos y recambios fundamentales.
-•	Tratamiento estético integral.
-•	Personalización de unidades.
-•	Restauraciones.
-•	Reparación y rectificación de motores.
-•	Diagnóstico completo de unidades.
-•	Mantenimiento, chequeo y reparación del circuito eléctrico de la unidad.
+-	Mecánica integral de motocicletas y cuatriciclos.
+-	Mantenimiento preventivo.
+-	Mantenimiento correctivo.
+-	Atención en pista.
+-	Traslado puerta a puerta de unidades.
+-	Tecnología altamente actualizada en cuanto a herramientas e insumos de análisis de software.
+-	Venta de insumos y recambios fundamentales.
+-	Tratamiento estético integral.
+-	Personalización de unidades.
+-	Restauraciones.
+-	Reparación y rectificación de motores.
+-	Diagnóstico completo de unidades.
+-	Mantenimiento, chequeo y reparación del circuito eléctrico de la unidad.
 Cabe destacar que el amplio abanico de servicios que la empresa brinda está al detalle en el sitio.
 
 #### Tecnologías Utilizadas en el Proyecto:
